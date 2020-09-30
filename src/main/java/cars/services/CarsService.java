@@ -40,4 +40,13 @@ public class CarsService {
         }
 
     }
+
+    public Car getCar(int id) {
+        for (Car car: carsDao.getCars()) {
+            if( car.getId() == id ) {
+                return car;
+            }
+        }
+        return null;
+    }
 }

@@ -1,4 +1,4 @@
-package cars.resourses;
+package cars.controllers;
 
 import cars.models.Car;
 import cars.services.CarsService;
@@ -7,8 +7,8 @@ import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("api")
-public class CarsResource {
+@Path("cars")
+public class CarsController {
 
     @Inject
     private CarsService carsService;
